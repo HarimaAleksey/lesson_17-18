@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    grid-template-rows: repeat(6, auto);
+    gap: 10px;
+    width: 1250px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    border-bottom: 3px solid #b0e0ea;
+    color: #9f9c9c;
+    padding: 20px 0;
+}
+
+header > .logo i {
+    color: rgba(80, 198, 219, 0.85);
+    font-size: 2em;
+}
+
+header > nav > ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header > nav > ul > li {
+    margin: .5em;
+}
+
+header > button.login {
+    background-color: #51bb7b;
+    color: #fff;
+    padding: 9px 30px;
+    border-radius: 1.3em;
+    border-style: none;
+}
+
+header > button.login:focus {
+    background-color: rgba(80, 198, 219, 0.85);
+}
+
+.hero {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.recent-posts {
+    grid-column: 1/2;
+    grid-row: 3/5;
+    padding: 2em;
+}
+
+.recent-posts ul {
+    list-style-type: none;
+}
+
+.recent-posts li {
+    margin: .2em 0;
+}
+
+main {
+    grid-column: 2/4;
+    grid-row: 2/4;
+}
+
+.help {
+    grid-column: 2/4;
+    grid-row: 4/5;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #d9d9d9;
+}
+
+.help-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: .75em;
+}
+
+.help h3 {
+    font-weight: 500;
+}
+
+.help p {
+    margin: .75em 0;
+    font-size: .75em;
+}
+
+.help-item button {
+    border: 2.5px solid rgba(80, 198, 219, 0.85);
+    padding: .5em;
+    color: rgba(80, 198, 219, 0.85);
+    font-weight: 500;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.gallery {
+    grid-column: 1/3;
+    grid-row: 5/6;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: .8em;
+}
+
+.related-posts {
+    grid-column: 3/4;
+    grid-row: 5/6;
+    padding: 2em;
+}
+
+.related-posts ul {
+    margin-left: 1.1em;
+}
+
+.related-posts li {
+    font-size: .75em;
+    font-weight: 500;
+}
+
+footer {
+    grid-column: 1/4;
+    grid-row: 6/7;
+    text-align: center;
+    padding: 2em 0;
+    background-color: #9f9c9c;
+}
+
+footer h3 {
+    color: #fff;
+    margin-bottom: .7em;
+}
+
+footer p {
+    margin-bottom: .8em;
+    font-size: .75em;
+}
